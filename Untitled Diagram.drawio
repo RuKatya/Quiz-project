@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T21:06:31.093Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="8aSuDAafE_1CXCvy5Uc2" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-05T21:18:57.212Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="K6jPvwGmYkQ86mpUB1N7" version="14.4.4" type="github">
   <diagram id="KNThbymLGsVphi79HAY6" name="Page-1">
-    <mxGraphModel dx="1021" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2480" dy="1506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,7 +19,7 @@
         <mxCell id="_W2Wu4x4kJNPoguewZKQ-15" value="&lt;font style=&quot;font-size: 17px&quot;&gt;QUESTION&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C7E0E0;" vertex="1" parent="1">
           <mxGeometry x="1055" y="280" width="470" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="_W2Wu4x4kJNPoguewZKQ-18" value="NEXT QUESTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AEF9FC;" vertex="1" parent="1">
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-18" value="NEXT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AEF9FC;" vertex="1" parent="1">
           <mxGeometry x="1490" y="545" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_W2Wu4x4kJNPoguewZKQ-19" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=#FFFFFF;fillColor=#FFFFFF;arcSize=4;" vertex="1" parent="1">
@@ -111,6 +111,36 @@
         </mxCell>
         <mxCell id="_W2Wu4x4kJNPoguewZKQ-61" value="NEXT QUESTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AEF9FC;" vertex="1" parent="1">
           <mxGeometry x="525" y="1780" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-62" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#CC99FF;gradientColor=#FF1008;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="120" width="780" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-63" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1850" y="232.5" width="660" height="395" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-64" value="&lt;font style=&quot;font-size: 19px&quot;&gt;Logo&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCCCFF;gradientColor=#CCCCFF;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="150" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-66" value="&lt;h1&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;You answer&lt;/font&gt;&lt;/h1&gt;&lt;h1&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&amp;nbsp;10/15&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="360" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-67" value="&lt;span style=&quot;background-color: rgb(255 , 240 , 31)&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;Restart the quiz&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=#FFF01F;fillColor=#FFF01F;" vertex="1" parent="1">
+          <mxGeometry x="2085" y="517.5" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-68" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fillColor=#CC99FF;gradientColor=#FF1008;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1280" width="300" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-69" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1367.5" width="280" height="472.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-70" value="&lt;font style=&quot;font-size: 19px&quot;&gt;Logo&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCCCFF;gradientColor=#CCCCFF;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1300" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-71" value="&lt;h1&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;You answer&lt;/font&gt;&lt;/h1&gt;&lt;h1&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&amp;nbsp;10/15&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="830" y="1490" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="_W2Wu4x4kJNPoguewZKQ-72" value="&lt;span style=&quot;background-color: rgb(255 , 240 , 31)&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;Restart the quiz&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=#FFF01F;fillColor=#FFF01F;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1630" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
