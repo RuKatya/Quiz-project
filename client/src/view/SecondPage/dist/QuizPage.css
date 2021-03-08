@@ -1,0 +1,25 @@
+.mainInfoObj {
+  width: 90%;
+  height: 70vh;
+  margin: 1.5% 0 0 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px #a5a4a4;
+}
+.mainInfoObj__AskAns {
+  position: absolute;
+  width: 90%;
+  top: 25%;
+  text-align: center;
+}
+.mainInfoObj__AskAns--question {
+  font-size: 3rem;
+  width: 90%;
+  margin-left: 5%;
+}
+.mainInfoObj__btnNext {
+  position: absolute;
+  padding: 0.5% 1.5%;
+  top: 75%;
+  left: 85%;
+}

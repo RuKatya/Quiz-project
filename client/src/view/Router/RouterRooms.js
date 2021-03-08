@@ -3,23 +3,22 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Pages
 import HomePage from '../FirstPage/HomePage'
-import QuizPage from '../SecondPage/QuizPage/QuizPage'
+import QuizPage from '../SecondPage/QuizPage'
+
+//CSS
+import './dist/RouterRooms.css'
 
 function RouterRooms() {
     return (
-
         <Router>
             <div>
-                <ul>
-                    <li>
-                    <Link to='/'>Home page</Link>
-                    </li>
-                    <li>
-                    <Link to='/quiz'>QuizPage</Link>
-                    </li>
-                </ul>
+                <div>
+                    <Link to='/' ><img src='img/Trivia.png' alt='Trivia' className='btnHome'/></Link>
+                </div>
+                <div>
+                    {/* <Link to='/quiz' className='btnStart'>Let's start!</Link> */}
+                </div>
 
-                <hr/>
 
                 <Switch>
                     <Route exact path="/">

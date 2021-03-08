@@ -1,15 +1,16 @@
 import React from 'react'
 
+//CSS
 import './App.css';
 
+//Rooms
 import RouterRooms from './view/Router/RouterRooms'
-import QuizPage from './view/SecondPage/QuizPage/QuizPage';
+
 
 function App() {
   return (
     <div>
       <RouterRooms />
-      {/* {QuizPage} */}
       </div>
   )
 }

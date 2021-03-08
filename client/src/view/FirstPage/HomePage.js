@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Link } from "react-router-dom";
+
+
 //CSS
 import './dist/HomePage.css'
 
@@ -18,6 +21,8 @@ function HomePage() {
                         <img src='img/iconQuiz.png' alt='no pic' className='mainInfoObj__img' />
                     </div>
                 </div>
+                <Link to='/quiz' className='btnStart'>Let's start!</Link>
+
         </div>
     )
 }
