@@ -1,13 +1,25 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
+
+// import { Link } from "react-router-dom";
+// import TotalPage from '../TotalPage/TotalPage';
 
 //CSS
 import './dist/QuizPage.css'
 
 function QuizPage() {
-    const [getQuestions, setQuestions] = useState(null);
-    const [questionNum, setQuestionNum] = useState(0);
+    const [getQuestions, setQuestions] = useState(null); //get DB
+    const [arrayNum, setArrayNum] = useState(0); //num of array
+    const [numOfQuestion, setNumOfQuestion] = useState(1); //num of question
+    const [countCorrectAns, setCounttCorrectAns] = useState(0); //count correct answers
+    const [checkFlag, setCheckFlag] = useState(0); //check flag for sure not choose twice the answer
+    const [background, setBackground] = useState(); //correct answer background
+    const [displayNext, setDisplayNext] = useState('block') //display of next button
+    const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
+
     let questions;
 
+    //DB
     useEffect(() => {
         let data;
         async function fetchData() {
@@ -25,39 +37,94 @@ function QuizPage() {
 
     console.log(getQuestions) //Show the data
 
+    //ARRAY NUM
     function counterPlus() {
-        if (questionNum === 8) {
-            setQuestionNum(0)
+        
+        setArrayNum(arrayNum + 1)
+        setNumOfQuestion(numOfQuestion + 1);
+        setCheckFlag(0)
+
+        if (arrayNum === 5) { //check if the user answer all the question
+            setDisplayNext('none')
+            setDisplayFinish('block')
         }
-        setQuestionNum(questionNum + 1)
+
+        console.log(displayNext, arrayNum)
+
+        console.log('flag', checkFlag)
     }
 
+    //CHECK IF CORRECT ANSWER
     function hendleAnswer(answer) {
-        let correct = questions[questionNum].correctAnswer;
+        let correct = questions[arrayNum].correctAnswer;
 
-        if(answer === correct){
-            return(console.log('da'))
-        } else (console.log('net'))
-
-        // return console.log(answer, correct)
+        if (checkFlag === 0 && answer === correct) {
+            setCounttCorrectAns(countCorrectAns + 1)
+            setCheckFlag(1)
+            return (console.log('da', countCorrectAns)
+            )
+        } else if (checkFlag === 0) {
+            setCheckFlag(1)
+            console.log('net', checkFlag)
+        }
     }
 
     if (getQuestions) {
         questions = getQuestions;
+
         return (
             <div>
                 <div className='mainInfoObj'>
                     <div className='mainInfoObj__AskAns'>
-                        <h1 className='mainInfoObj__AskAns--question'>
-                            {questions[questionNum].ask}
+                        <h1
+                            className='mainInfoObj__AskAns--question'
+                        >
+                            {numOfQuestion}. {questions[arrayNum].ask}
                         </h1>
-                        <button onClick={() => hendleAnswer(questions[questionNum].ans1)}>{questions[questionNum].ans1}</button>
-                        <button onClick={() => hendleAnswer(questions[questionNum].ans2)}>{questions[questionNum].ans2}</button>
-                        <button onClick={() => hendleAnswer(questions[questionNum].ans3)}>{questions[questionNum].ans3}</button>
-                        <button onClick={() => hendleAnswer(questions[questionNum].ans4)}>{questions[questionNum].ans4}</button>
+                        <div className='mainInfoObj__AskAns--answers'>
+                            <button
+                                onClick={() => hendleAnswer(questions[arrayNum].ans1)}
+                                className='mainInfoObj__AskAns--choose'
+                                style={{ background: background }}
+                            >
+                                {questions[arrayNum].ans1}
+                            </button>
+                            <button
+                                onClick={() => hendleAnswer(questions[arrayNum].ans2)}
+                                className='mainInfoObj__AskAns--choose'
+                                style={{ background: background }}
+                            >
+                                {questions[arrayNum].ans2}
+                            </button>
+                            <button
+                                onClick={() => hendleAnswer(questions[arrayNum].ans3)}
+                                className='mainInfoObj__AskAns--choose'
+                                style={{ background: background }}
+                            >
+                                {questions[arrayNum].ans3}
+                            </button>
+                            <button
+                                onClick={() => hendleAnswer(questions[arrayNum].ans4)}
+                                className='mainInfoObj__AskAns--choose'
+                                style={{ background: background }}
+
+                            >
+                                {questions[arrayNum].ans4}
+                            </button>
+                        </div>
                     </div>
-                    <input type="button" value="next" onClick={counterPlus} className="mainInfoObj__btnNext"/>
+                    <input
+                        type="button"
+                        value="Next"
+                        onClick={counterPlus}
+                        className="mainInfoObj__btnNext"
+                        style={{display:displayNext}}
+                    />
                 </div>
+                
+                <Link to='/total' style={{display:displayFinish}}>Finish2</Link>
+                {/* <TotalPage countCorrectAns={countCorrectAns} /> */}
+
             </div>
         )
     }

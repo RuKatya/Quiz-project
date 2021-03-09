@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(0deg, #dbeb50 0%, #4be063) 100% no-repeat fixed;
+}
+
 .mainInfoObj {
   width: 90%;
   height: 70vh;
@@ -17,9 +21,30 @@
   width: 90%;
   margin-left: 5%;
 }
+.mainInfoObj__AskAns--answers {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 5% 0 0 40%;
+}
+.mainInfoObj__AskAns--choose {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  border: none;
+  background: #8bec9b;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  margin: 2.5%;
+  padding: 2%;
+  outline: none;
+}
+.mainInfoObj__AskAns--choose:hover {
+  background: #dae674;
+  transition: 0.2s;
+}
 .mainInfoObj__btnNext {
   position: absolute;
   padding: 0.5% 1.5%;
-  top: 75%;
+  top: 78%;
   left: 85%;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,26 @@ import { Link } from "react-router-dom";
 import './dist/HomePage.css'
 
 function HomePage() {
+
+    // const [background, setBackground] = useState(
+    //     'linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(44,190,232,1) 100%) no-repeat fixed'
+    // )
+
+    
+        function change(){
+            document.body.style = 'background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(44,190,232,1) 100%) no-repeat fixed;'
+        }
+        change();
+    
+
+    function changeBack(){
+        return (
+                document.body.style = 'background:linear-gradient(0deg, rgb(233, 253, 47)  0%,rgb(47, 243, 80)) 100% no-repeat fixed;'
+        )
+    }
+
+    
+
     return (
         <div>
                 <div className='mainInfoObj'>
@@ -21,7 +41,8 @@ function HomePage() {
                         <img src='img/iconQuiz.png' alt='no pic' className='mainInfoObj__img' />
                     </div>
                 </div>
-                <Link to='/quiz' className='btnStart'>Let's start!</Link>
+                <Link to='/quiz' className='btnStart' onClick={changeBack}>Let's start!</Link>
+                
 
         </div>
     )
