@@ -16,7 +16,7 @@ function QuizPage() {
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
     const [showWrong, setShowWrong] = useState('none'); //show wrong 
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
-    const [seconds, setSeconds] = useState(15); //timer
+    const [seconds, setSeconds] = useState(5); //timer
 
 
 
@@ -55,7 +55,7 @@ function QuizPage() {
         setShowWrong('none') //Dont show wrong
         setShowCorrect('none') //Dont show correct
 
-        if (arrayNum === 18) { //check if the user answer all the question
+        if (arrayNum === 20) { //check if the user answer all the question
             setDisplayNext('none') //next button none
             setDisplayFinish('block') //finish button block
         }
@@ -65,16 +65,19 @@ function QuizPage() {
         console.log('flag', checkFlag)
     }
 
-    function Timer() { 
+    function Timer() {
         useEffect(() => {
-            if (seconds > 0) {
+            if (seconds > 0 && arrayNum < 3) {
                 setTimeout(() => setSeconds(seconds - 1), 1000);
-                
-            } else {
-                setSeconds(15);
+            } else if (seconds === 0) {
+                setSeconds(5);
                 setArrayNum(arrayNum + 1)
-            }
+            } 
         });
+
+        if (seconds > 0 && arrayNum === 3) {
+            setSeconds('stop')
+        }
 
         return (
             <div className="mainInfoObj__timer">
