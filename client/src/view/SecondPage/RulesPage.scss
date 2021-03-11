@@ -1,7 +1,3 @@
-body {
-    // background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(44,190,232,1) 100%) no-repeat fixed;
-}
-
 .mainInfoObj {
     width: 90%;
     height: 70vh;
@@ -9,39 +5,28 @@ body {
     background-color: rgba(255, 255, 255, 0.800);
     border-radius: 30px;
     box-shadow: 0px 0px 15px rgb(165, 164, 164);
-    &__text{
+    &__AllText{
         position: absolute;
         top: 22%;
-        left: 10%;
+        left: 27%;
         text-align: center;
     }
-    &__text--h{
+    &__header{
         font-size: 4rem;
     }
-    &__text--p{
+    &__parag{
         font-size: 2.5rem;
-    }
-    &__text--pTriviaKing{
-        font-weight: bold;
-        font-size: 3rem;
-    }
-    &__img{
-        width: 40%;
-        position: absolute;
-        top: 17%;
-        left: 52%;
     }
 }
 
-.btnStart {
-    position: relative;
-    font-size: 2rem;
+.btnGotIt {
     position: absolute;
-    top: 72%;
-    left: 23.5%;
+    font-size: 2rem;
+    top: 120%;
+    left: 43%;
     background-color: rgba(46, 243, 46, 0.582);
     color: black;
-    padding: 0.5%;
+    padding: 1%;
     border-radius: 20px;
     text-decoration: none;
     &:hover {

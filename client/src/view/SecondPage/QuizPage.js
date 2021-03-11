@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
-// import { Link } from "react-router-dom";
+//PAGES
 // import TotalPage from '../TotalPage/TotalPage';
 
 //CSS
@@ -16,21 +16,21 @@ function QuizPage() {
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
     const [showWrong, setShowWrong] = useState('none'); //show wrong 
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
-    const [seconds, setSeconds] = useState(5); //timer
+    const [seconds, setSeconds] = useState(600); //timer
 
-
-
+    //BODY STYLE
     useEffect(() => {
         function change() {
             document.body.style = 'background:linear-gradient(0deg, rgb(233, 253, 47)  0%, rgb(47, 243, 80) 100%) no-repeat fixed;'
         }
 
         change();
+        
     }, [])
 
     let questions;
 
-    //DB
+    //GET DB
     useEffect(() => {
         let data;
         async function fetchData() {
@@ -46,18 +46,16 @@ function QuizPage() {
         fetchData();
     }, [])
 
-    console.log(getQuestions) //Show the data
-
     //ARRAY NUM
     function counterPlus() {
-        setArrayNum(arrayNum + 1) //array num
-        setCheckFlag(0) //check flag
-        setShowWrong('none') //Dont show wrong
-        setShowCorrect('none') //Dont show correct
+        setArrayNum(arrayNum + 1) 
+        setCheckFlag(0) 
+        setShowWrong('none') 
+        setShowCorrect('none') 
 
-        if (arrayNum === 20) { //check if the user answer all the question
-            setDisplayNext('none') //next button none
-            setDisplayFinish('block') //finish button block
+        if (arrayNum === 21) { //check if the user answer all the question
+            setDisplayNext('none') 
+            setDisplayFinish('block') 
         }
 
         console.log(displayNext, arrayNum)
@@ -65,23 +63,29 @@ function QuizPage() {
         console.log('flag', checkFlag)
     }
 
+    //TIMER
+
     function Timer() {
         useEffect(() => {
-            if (seconds > 0 && arrayNum < 3) {
+            if (seconds > 0 && arrayNum < 21) {
                 setTimeout(() => setSeconds(seconds - 1), 1000);
             } else if (seconds === 0) {
-                setSeconds(5);
-                setArrayNum(arrayNum + 1)
-            } 
+                setSeconds('none');
+                // setArrayNum(arrayNum + 1)
+            }
         });
 
-        if (seconds > 0 && arrayNum === 3) {
-            setSeconds('stop')
-        }
+        // if(seconds%60 < 0) {
+        //     seconds = '0' + seconds
+        // }
+
+        // if (seconds > 0 && arrayNum === 21) {
+        //     setSeconds(-1)
+        // }
 
         return (
             <div className="mainInfoObj__timer">
-                {seconds}
+                {Math.floor(seconds/60)}:{seconds%60}
             </div>
         );
     }
@@ -91,18 +95,14 @@ function QuizPage() {
         let correct = questions[arrayNum].correctAnswer;
 
         if (checkFlag === 0 && answer === correct) {
-            setCounttCorrectAns(countCorrectAns + 1) //count correct answers
+            setCounttCorrectAns(countCorrectAns + 1) 
             setCheckFlag(1) //chenge the flag to 1 for not choose the answer one more time
             setShowCorrect('block') //if correct show correct
-
-            console.log('da', countCorrectAns)
-
 
         } else if (checkFlag === 0) {
             setCheckFlag(1) //chenge the flag to 1 for not choose the answer one more time
             setShowWrong('block') //if wrong show wrong
 
-            console.log('net', checkFlag)
         }
     }
 
@@ -173,6 +173,7 @@ function QuizPage() {
                     to='/total'
                     style={{ display: displayFinish }}
                     className="mainInfoObj__btnFinish"
+                    countCorrectAns={countCorrectAns}
                 >
                     Done!
                 </Link>

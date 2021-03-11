@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Pages
-import HomePage from '../FirstPage/HomePage'
-import QuizPage from '../SecondPage/QuizPage'
+import HomePage from '../FirstPage/HomePage';
+import QuizPage from '../SecondPage/QuizPage';
 import TotalPage from '../TotalPage/TotalPage';
+import RulesPage from '../SecondPage/RulesPage';
 
 //CSS
 import './dist/RouterRooms.css'
@@ -20,6 +21,10 @@ function RouterRooms() {
                     <Switch>
                         <Route exact path="/">
                             <HomePage />
+                        </Route>
+
+                        <Route path='/rules'>
+                            <RulesPage />
                         </Route>
 
                         <Route path='/quiz'>

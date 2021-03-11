@@ -6,41 +6,30 @@
   border-radius: 30px;
   box-shadow: 0px 0px 15px #a5a4a4;
 }
-.mainInfoObj__text {
+.mainInfoObj__AllText {
   position: absolute;
   top: 22%;
-  left: 10%;
+  left: 27%;
   text-align: center;
 }
-.mainInfoObj__text--h {
+.mainInfoObj__header {
   font-size: 4rem;
 }
-.mainInfoObj__text--p {
+.mainInfoObj__parag {
   font-size: 2.5rem;
 }
-.mainInfoObj__text--pTriviaKing {
-  font-weight: bold;
-  font-size: 3rem;
-}
-.mainInfoObj__img {
-  width: 40%;
-  position: absolute;
-  top: 17%;
-  left: 52%;
-}
 
-.btnStart {
-  position: relative;
-  font-size: 2rem;
+.btnGotIt {
   position: absolute;
-  top: 72%;
-  left: 23.5%;
+  font-size: 2rem;
+  top: 120%;
+  left: 43%;
   background-color: rgba(46, 243, 46, 0.582);
   color: black;
-  padding: 0.5%;
+  padding: 1%;
   border-radius: 20px;
   text-decoration: none;
 }
-.btnStart:hover {
+.btnGotIt:hover {
   background-color: rgba(0, 248, 0, 0.767);
 }

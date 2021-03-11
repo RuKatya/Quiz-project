@@ -1,0 +1,17 @@
+.btnAgain {
+    position: absolute;
+    top: 65%;
+    left: 41%;
+    background-color: rgb(71, 223, 185);
+    padding: 0.5% 2.5%;
+    border-radius: 17px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    outline: none;
+    &:hover {
+        background-color: aqua;
+        transition: 0.08s;
+    }
+}

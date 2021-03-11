@@ -6,7 +6,6 @@ import './App.css';
 //Rooms
 import RouterRooms from './view/Router/RouterRooms'
 
-
 function App() {
   return (
     <div>
