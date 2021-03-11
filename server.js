@@ -28,7 +28,7 @@ const Question = mongoose.model('Question', { //collection
 });
 
 //Get data from DB
-app.get('/api/', async (req, res) => {
+app.get('/api', async (req, res) => {
     try {
         const questions = await Question.find({});
         res.status(200).send({ questions })
