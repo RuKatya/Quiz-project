@@ -12,7 +12,7 @@ function QuizPage(props) {
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
     const [showWrong, setShowWrong] = useState('none'); //show wrong 
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
-    const [seconds, setSeconds] = useState(600); //timer
+const [seconds, setSeconds] = useState(60); //timer
 
     // const [score, setScore] = useState(0);
 
@@ -66,10 +66,11 @@ function QuizPage(props) {
     //TIMER
     function Timer() {
         useEffect(() => {
-            if (seconds > 0 && arrayNum < 21) {
+            if (seconds > 0 && arrayNum < 23) {
                 setTimeout(() => setSeconds(seconds - 1), 1000);
             } else if (seconds === 0) {
-                setSeconds('none');
+                setSeconds(0);
+                
             }
         });
 
@@ -170,7 +171,7 @@ function QuizPage(props) {
 
                 <Timer />
 
-                <Link 
+                <Link
                     to='/total'
                     style={{ display: displayFinish }}
                     className="mainInfoObj__btnFinish" >
