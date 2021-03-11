@@ -35,7 +35,7 @@ function QuizPage(props) {
         let data;
         async function fetchData() {
 
-            await fetch(`http://localhost:4000/api`)
+            await fetch(`/api`)
                 .then(res => res.json())
                 .then(json => {
                     data = json.questions;

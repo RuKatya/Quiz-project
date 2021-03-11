@@ -35,7 +35,7 @@ var Question = mongoose.model('Question', {
   correctAnswer: String
 }); //Get data from DB
 
-app.get('/api/', function _callee(req, res) {
+app.get('/api', function _callee(req, res) {
   var questions;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
