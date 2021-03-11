@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 //CSS
 import './dist/QuizPage.css'
@@ -12,11 +12,9 @@ function QuizPage(props) {
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
     const [showWrong, setShowWrong] = useState('none'); //show wrong 
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
-const [seconds, setSeconds] = useState(60); //timer
+    const [seconds, setSeconds] = useState(60); //timer
 
-    // const [score, setScore] = useState(0);
-
-    const {score, setScore} = props;
+    const { score, setScore } = props;
 
     console.log(score);
 
@@ -65,26 +63,21 @@ const [seconds, setSeconds] = useState(60); //timer
 
     //TIMER
     function Timer() {
+        let history = useHistory();
+
         useEffect(() => {
             if (seconds > 0 && arrayNum < 23) {
                 setTimeout(() => setSeconds(seconds - 1), 1000);
             } else if (seconds === 0) {
                 setSeconds(0);
-                
+                history.push("/total");
             }
         });
 
-        let sec = seconds%60;
-        if(sec<10){
+        let sec = seconds % 60;
+        if (sec < 10) {
             sec = '0' + sec
         }
-        // if(seconds%60 < 10) {
-        //     seconds = '0' + seconds
-        // }
-
-        // if (seconds > 0 && arrayNum === 21) {
-        //     setSeconds(-1)
-        // }
 
         return (
             <div className="mainInfoObj__timer">
