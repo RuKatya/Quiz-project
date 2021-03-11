@@ -5,12 +5,9 @@ import './dist/TotalPage.css'
 
 
 function TotalPage(props) {
-    const {countCorrectAns} = props
-    console.log(countCorrectAns)
-
-
-    const [correctAns, setCorrectAns] = useState(22)
-    const [text, setText] = useState('Better luck next time')
+    const {score, setScore}=props;
+    
+    const [text, setText] = useState('')
 
     
     useEffect(() => {
@@ -21,21 +18,19 @@ function TotalPage(props) {
         change();
     }, [])
 
-    function Total({correctAns}) {
-        setCorrectAns(countCorrectAns)
+    function Total() {
 
-
-        if(correctAns <= 6){
+        if(score <= 6){
             setText('Better luck next time')
-        } else if( correctAns <= 15) {
+        } else if( score <= 15) {
             setText('Not bad, maybe you can do better next time')
-        } else if ( correctAns <= 20) {
+        } else if ( score <= 20) {
             setText("Great! You're almost there")
-        } else if (correctAns <= 23) {
+        } else if (score <= 23) {
             setText('Congratulations! You are the trivia king')
         }
 
-        console.log(correctAns)
+        console.log(score) //for check
 
         return (
             <p>
@@ -44,17 +39,21 @@ function TotalPage(props) {
         )
     }
 
+    function again() {
+        setScore(0)
+    }
+
     return (
         <div>
             <div className='mainInfoObj'>
                 <div className='mainInfoObj__AllText'>
                     <h1 className='mainInfoObj__header'> You answer right</h1>
                     <p className='mainInfoObj__parag'>
-                        <p>{correctAns}/23</p>
-                        <Total correctAns={correctAns}/>
+                        <p>{score}/23</p>
+                        <Total/>
                     </p>
                 </div>
-                <Link to='/quiz' className='btnAgain' >Try again!</Link>
+                <Link to='/quiz' className='btnAgain' onClick={again}>Try again!</Link>
                 
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Pages
@@ -11,6 +11,8 @@ import RulesPage from '../SecondPage/RulesPage';
 import './dist/RouterRooms.css'
 
 function RouterRooms() {
+    const [score, setScore] = useState(0);
+
     return (
             <Router>
                 <div>
@@ -28,11 +30,11 @@ function RouterRooms() {
                         </Route>
 
                         <Route path='/quiz'>
-                            <QuizPage />
+                            <QuizPage score={score} setScore={setScore}/>
                         </Route>
 
                         <Route path='/total' >
-                            <TotalPage />
+                            <TotalPage score={score} setScore={setScore}/>
                         </Route>
                     </Switch>
 

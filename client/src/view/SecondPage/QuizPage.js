@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
-//PAGES
-// import TotalPage from '../TotalPage/TotalPage';
-
 //CSS
 import './dist/QuizPage.css'
 
-function QuizPage() {
+function QuizPage(props) {
     const [getQuestions, setQuestions] = useState(null); //get DB
     const [arrayNum, setArrayNum] = useState(0); //num of array
-    const [countCorrectAns, setCounttCorrectAns] = useState(0); //count correct answers
     const [checkFlag, setCheckFlag] = useState(0); //check flag for sure not choose twice the answer
     const [displayNext, setDisplayNext] = useState('block') //display of next button
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
@@ -18,14 +14,18 @@ function QuizPage() {
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
     const [seconds, setSeconds] = useState(600); //timer
 
+    // const [score, setScore] = useState(0);
+
+    const {score, setScore} = props;
+
+    console.log(score);
+
     //BODY STYLE
     useEffect(() => {
         function change() {
             document.body.style = 'background:linear-gradient(0deg, rgb(233, 253, 47)  0%, rgb(47, 243, 80) 100%) no-repeat fixed;'
         }
-
         change();
-        
     }, [])
 
     let questions;
@@ -48,14 +48,14 @@ function QuizPage() {
 
     //ARRAY NUM
     function counterPlus() {
-        setArrayNum(arrayNum + 1) 
-        setCheckFlag(0) 
-        setShowWrong('none') 
-        setShowCorrect('none') 
+        setArrayNum(arrayNum + 1)
+        setCheckFlag(0)
+        setShowWrong('none')
+        setShowCorrect('none')
 
         if (arrayNum === 21) { //check if the user answer all the question
-            setDisplayNext('none') 
-            setDisplayFinish('block') 
+            setDisplayNext('none')
+            setDisplayFinish('block')
         }
 
         console.log(displayNext, arrayNum)
@@ -64,18 +64,20 @@ function QuizPage() {
     }
 
     //TIMER
-
     function Timer() {
         useEffect(() => {
             if (seconds > 0 && arrayNum < 21) {
                 setTimeout(() => setSeconds(seconds - 1), 1000);
             } else if (seconds === 0) {
                 setSeconds('none');
-                // setArrayNum(arrayNum + 1)
             }
         });
 
-        // if(seconds%60 < 0) {
+        let sec = seconds%60;
+        if(sec<10){
+            sec = '0' + sec
+        }
+        // if(seconds%60 < 10) {
         //     seconds = '0' + seconds
         // }
 
@@ -85,7 +87,7 @@ function QuizPage() {
 
         return (
             <div className="mainInfoObj__timer">
-                {Math.floor(seconds/60)}:{seconds%60}
+                {Math.floor(seconds / 60)}:{sec}
             </div>
         );
     }
@@ -95,14 +97,13 @@ function QuizPage() {
         let correct = questions[arrayNum].correctAnswer;
 
         if (checkFlag === 0 && answer === correct) {
-            setCounttCorrectAns(countCorrectAns + 1) 
+            setScore(score + 1)
             setCheckFlag(1) //chenge the flag to 1 for not choose the answer one more time
-            setShowCorrect('block') //if correct show correct
+            setShowCorrect('block')
 
         } else if (checkFlag === 0) {
             setCheckFlag(1) //chenge the flag to 1 for not choose the answer one more time
-            setShowWrong('block') //if wrong show wrong
-
+            setShowWrong('block')
         }
     }
 
@@ -169,15 +170,12 @@ function QuizPage() {
 
                 <Timer />
 
-                <Link
+                <Link 
                     to='/total'
                     style={{ display: displayFinish }}
-                    className="mainInfoObj__btnFinish"
-                    countCorrectAns={countCorrectAns}
-                >
+                    className="mainInfoObj__btnFinish" >
                     Done!
                 </Link>
-                {/* <TotalPage countCorrectAns={countCorrectAns} /> */}
 
             </div>
         )
