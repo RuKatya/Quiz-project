@@ -45,10 +45,10 @@ function TotalPage(props) {
 
     return (
         <div>
-            <div className='mainInfoObj'>
-                <div className='mainInfoObj__AllText'>
-                    <h1 className='mainInfoObj__header'> You answer right</h1>
-                    <p className='mainInfoObj__parag'>
+            <div className='mainInfoObjTotal'>
+                <div className='mainInfoObjTotal__AllText'>
+                    <h1 className='mainInfoObjTotal__header'> You answer right</h1>
+                    <p className='mainInfoObjTotal__parag'>
                         <p>{score}/23</p>
                         <Total/>
                     </p>

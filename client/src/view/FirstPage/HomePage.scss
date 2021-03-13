@@ -5,23 +5,28 @@
     background-color: rgba(255, 255, 255, 0.800);
     border-radius: 30px;
     box-shadow: 0px 0px 15px rgb(165, 164, 164);
-    &__text{
+
+    &__text {
         position: absolute;
         top: 22%;
         left: 10%;
         text-align: center;
     }
-    &__text--h{
+
+    &__text--h {
         font-size: 4rem;
     }
-    &__text--p{
+
+    &__text--p {
         font-size: 2.5rem;
     }
-    &__text--pTriviaKing{
+
+    &__text--pTriviaKing {
         font-weight: bold;
         font-size: 3rem;
     }
-    &__img{
+
+    &__img {
         width: 40%;
         position: absolute;
         top: 17%;
@@ -39,6 +44,7 @@
     padding: 0.5%;
     border-radius: 20px;
     text-decoration: none;
+
     &:hover {
         background-color: rgba(0, 248, 0, 0.767);
     }
@@ -48,145 +54,118 @@
 @media only screen and (max-width: 1100px) {
     .mainInfoObjHome {
         height: 85vh;
-        // margin: 1.5% 0 0 5%;
-        // background-color: rgba(255, 255, 255, 0.800);
         border-radius: 40px;
-        // box-shadow: 0px 0px 15px rgb(165, 164, 164);
-        &__text{
-            // position: absolute;
+
+        &__text {
             top: 20%;
             left: 9%;
-            // text-align: center;
         }
-        &__text--h{
+
+        &__text--h {
             font-size: 5rem;
         }
-        &__text--p{
+
+        &__text--p {
             font-size: 3rem;
         }
-        &__text--pTriviaKing{
-            // font-weight: bold;
+
+        &__text--pTriviaKing {
             font-size: 4rem;
         }
-        &__img{
+
+        &__img {
             width: 40%;
-            // position: absolute;
             top: 60%;
             left: 32%;
         }
     }
-    
+
     .btnStart {
         font-size: 3rem;
-        // position: absolute;
         top: 90%;
         left: 37%;
-        // background-color: rgba(46, 243, 46, 0.582);
-        // color: black;
         padding: 1%;
         border-radius: 25px;
-        // text-decoration: none;
-        // &:hover {
-        //     background-color: rgba(0, 248, 0, 0.767);
-        // }
     }
-    }
+}
 
 //800px
-    @media only screen and (max-width: 800px) {
-        .mainInfoObjHome {
-            width: 95%;
-            height: 85vh;
-            margin: 1.5% 0 5% 2.5%;
-            // background-color: rgba(255, 255, 255, 0.800);
-            // border-radius: 40px;
-            // box-shadow: 0px 0px 15px rgb(165, 164, 164);
-            &__text{
-                // position: absolute;
-                top: 18%;
-                left: 4%;
-                // text-align: center;
-            }
-            &__text--h{
-                font-size: 4.5rem;
-            }
-            &__text--p{
-                font-size: 2.5rem;
-            }
-            &__text--pTriviaKing{
-                // font-weight: bold;
-                font-size: 3.5rem;
-            }
-            &__img{
-                // width: 40%;
-                // position: absolute;
-                top: 65%;
-                left: 32%;
-            }
+@media only screen and (max-width: 800px) {
+    .mainInfoObjHome {
+        width: 95%;
+        height: 80vh;
+        margin: 1.5% 0 3% 2.5%;
+
+        &__text {
+            top: 15%;
+            left: 4%;
         }
-        
-        .btnStart {
+
+        &__text--h {
+            font-size: 4.5rem;
+        }
+
+        &__text--p {
             font-size: 2.5rem;
-            // position: absolute;
-            top: 92%;
-            left: 36%;
-            // background-color: rgba(46, 243, 46, 0.582);
-            // color: black;
-            padding: 1%;
-            border-radius: 25px;
-            // text-decoration: none;
-            // &:hover {
-            //     background-color: rgba(0, 248, 0, 0.767);
-            // }
-        }
         }
 
-        //450px
-        @media only screen and (max-width: 450px) {
-            .mainInfoObjHome {
-                width: 95%;
-                height: 140vh;
-                margin: 1.5% 0 5% 2.5%;
-                // background-color: rgba(255, 255, 255, 0.800);
-                // border-radius: 40px;
-                // box-shadow: 0px 0px 15px rgb(165, 164, 164);
-                &__text{
-                    // position: absolute;
-                    top: 18%;
-                    left: 4%;
-                    // text-align: center;
-                }
-                &__text--h{
-                    font-size: 3rem;
-                }
-                &__text--p{
-                    font-size: 2rem;
-                }
-                &__text--pTriviaKing{
-                    // font-weight: bold;
-                    font-size: 2.5rem;
-                }
-                &__img{
-                    width: 80%;
-                    // position: absolute;
-                    top: 98%;
-                    left: 12%;
-                }
-            }
-            
-            .btnStart {
-                font-size: 2.5rem;
-                // position: absolute;
-                top: 140%;
-                left: 22%;
-                // background-color: rgba(46, 243, 46, 0.582);
-                // color: black;
-                padding: 1%;
-                border-radius: 25px;
-                // text-decoration: none;
-                // &:hover {
-                //     background-color: rgba(0, 248, 0, 0.767);
-                // }
-            }
-            }
+        &__text--pTriviaKing {
+            font-size: 3.5rem;
+        }
 
+        &__img {
+            top: 60%;
+            left: 32%;
+        }
+    }
+
+    .btnStart {
+        font-size: 2.5rem;
+        top: 87%;
+        left: 36%;
+        padding: 1%;
+        border-radius: 25px;
+    }
+}
+
+//450px
+@media only screen and (max-width: 450px) {
+    .mainInfoObjHome {
+        // height: 80vh;
+        // margin: 1.5% 0 5% 2.5%;
+
+        &__text {
+            top: 16%;
+            left: 1%;
+        }
+
+        &__text--h {
+            font-size: 2rem;
+        }
+
+        &__text--p {
+            font-size: 1.5rem;
+        }
+
+        &__text--pTriviaKing {
+            position: absolute;
+            top: 77%;
+            left: 29%;
+            font-size: 2rem;
+        }
+
+        &__img {
+            width: 70%;
+            top: 55%;
+            left: 17%;
+        }
+    }
+
+    .btnStart {
+        font-size: 1.5rem;
+        top: 89%;
+        left: 29%;
+        padding: 2%;
+        border-radius: 25px;
+    }
+}

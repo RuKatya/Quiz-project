@@ -16,10 +16,10 @@ function RulesPage() {
 
     return (
         <div >
-            <div className='mainInfoObj'>
-                <div className='mainInfoObj__AllText'>
-                    <h1 className='mainInfoObj__header'>Notice</h1>
-                    <p className='mainInfoObj__parag'>
+            <div className='mainInfoObjRules'>
+                <div className='mainInfoObjRules__AllText'>
+                    <h1 className='mainInfoObjRules__header'>Notice</h1>
+                    <p className='mainInfoObjRules__parag'>
                         <p>The trivia will consist of 23 questions and</p> <p>you will be given 10 minutes to solve them all.</p>
                     </p>
                     <Link to='/quiz' className='btnGotIt'>Got it</Link>

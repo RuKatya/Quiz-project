@@ -79,11 +79,11 @@
 @media only screen and (max-width: 800px) {
   .mainInfoObjHome {
     width: 95%;
-    height: 85vh;
-    margin: 1.5% 0 5% 2.5%;
+    height: 80vh;
+    margin: 1.5% 0 3% 2.5%;
   }
   .mainInfoObjHome__text {
-    top: 18%;
+    top: 15%;
     left: 4%;
   }
   .mainInfoObjHome__text--h {
@@ -96,48 +96,46 @@
     font-size: 3.5rem;
   }
   .mainInfoObjHome__img {
-    top: 65%;
+    top: 60%;
     left: 32%;
   }
 
   .btnStart {
     font-size: 2.5rem;
-    top: 92%;
+    top: 87%;
     left: 36%;
     padding: 1%;
     border-radius: 25px;
   }
 }
 @media only screen and (max-width: 450px) {
-  .mainInfoObjHome {
-    width: 95%;
-    height: 140vh;
-    margin: 1.5% 0 5% 2.5%;
-  }
   .mainInfoObjHome__text {
-    top: 18%;
-    left: 4%;
+    top: 16%;
+    left: 1%;
   }
   .mainInfoObjHome__text--h {
-    font-size: 3rem;
-  }
-  .mainInfoObjHome__text--p {
     font-size: 2rem;
   }
+  .mainInfoObjHome__text--p {
+    font-size: 1.5rem;
+  }
   .mainInfoObjHome__text--pTriviaKing {
-    font-size: 2.5rem;
+    position: absolute;
+    top: 77%;
+    left: 29%;
+    font-size: 2rem;
   }
   .mainInfoObjHome__img {
-    width: 80%;
-    top: 98%;
-    left: 12%;
+    width: 70%;
+    top: 55%;
+    left: 17%;
   }
 
   .btnStart {
-    font-size: 2.5rem;
-    top: 140%;
-    left: 22%;
-    padding: 1%;
+    font-size: 1.5rem;
+    top: 89%;
+    left: 29%;
+    padding: 2%;
     border-radius: 25px;
   }
 }

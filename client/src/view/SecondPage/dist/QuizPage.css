@@ -20,6 +20,14 @@
   color: red;
   font-weight: bold;
 }
+.mainInfoObjQuiz__AskAns--correct {
+  position: absolute;
+  top: 58%;
+  left: 62%;
+  font-size: 2rem;
+  color: green;
+  font-weight: bold;
+}
 .mainInfoObjQuiz__AskAns--question {
   font-size: 3rem;
   width: 90%;
@@ -30,14 +38,6 @@
   flex-direction: column;
   width: 20%;
   margin: 5% 0 0 40%;
-}
-.mainInfoObjQuiz__AskAns--correct {
-  position: absolute;
-  top: 58%;
-  left: 62%;
-  font-size: 2rem;
-  color: green;
-  font-weight: bold;
 }
 .mainInfoObjQuiz__AskAns--choose {
   font-family: "Architects Daughter", cursive;
@@ -95,4 +95,145 @@
   text-decoration: none;
   color: black;
   outline: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainInfoObjQuiz {
+    height: 85vh;
+    border-radius: 40px;
+  }
+  .mainInfoObjQuiz__AskAns {
+    width: 90%;
+    top: 18%;
+  }
+  .mainInfoObjQuiz__AskAns--wrong {
+    top: 74%;
+    left: 5%;
+    font-size: 2.5rem;
+  }
+  .mainInfoObjQuiz__AskAns--correct {
+    top: 73%;
+    left: 78%;
+    font-size: 2.5rem;
+  }
+  .mainInfoObjQuiz__AskAns--question {
+    font-size: 4.5rem;
+  }
+  .mainInfoObjQuiz__AskAns--answers {
+    width: 58%;
+    margin: 3% 0 0 20%;
+  }
+  .mainInfoObjQuiz__AskAns--choose {
+    border-radius: 40px;
+    font-size: 3rem;
+    margin: 2%;
+    padding: 1.4%;
+  }
+  .mainInfoObjQuiz__btnNext {
+    padding: 0.5% 2.5%;
+    top: 91%;
+    left: 78%;
+    border-radius: 20px;
+    font-size: 2.5rem;
+  }
+  .mainInfoObjQuiz__timer {
+    top: 89%;
+    left: 8%;
+    width: 15%;
+    font-size: 4rem;
+  }
+  .mainInfoObjQuiz__btnFinish {
+    top: 91%;
+    left: 78%;
+    border-radius: 20px;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mainInfoObjQuiz {
+    width: 95%;
+    height: 80vh;
+    margin: 1.5% 0 3% 2.5%;
+  }
+  .mainInfoObjQuiz__AskAns {
+    top: 18%;
+  }
+  .mainInfoObjQuiz__AskAns--wrong {
+    top: 70%;
+    left: 6%;
+    font-size: 2rem;
+  }
+  .mainInfoObjQuiz__AskAns--correct {
+    top: 70%;
+    left: 82%;
+    font-size: 2rem;
+  }
+  .mainInfoObjQuiz__AskAns--question {
+    font-size: 3rem;
+    margin-left: 7.5%;
+  }
+  .mainInfoObjQuiz__AskAns--answers {
+    margin: 3% 0 0 22%;
+  }
+  .mainInfoObjQuiz__AskAns--choose {
+    font-size: 2rem;
+  }
+  .mainInfoObjQuiz__btnNext {
+    top: 87%;
+    left: 77%;
+  }
+  .mainInfoObjQuiz__timer {
+    top: 86%;
+    left: 6%;
+    width: 15%;
+    font-size: 3rem;
+  }
+  .mainInfoObjQuiz__btnFinish {
+    top: 87%;
+    left: 77%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mainInfoObjQuiz {
+    width: 95%;
+  }
+  .mainInfoObjQuiz__AskAns {
+    top: 18%;
+  }
+  .mainInfoObjQuiz__AskAns--wrong {
+    top: 72%;
+    left: 6%;
+    font-size: 1.1rem;
+  }
+  .mainInfoObjQuiz__AskAns--correct {
+    top: 72%;
+    left: 81%;
+    font-size: 1.1rem;
+  }
+  .mainInfoObjQuiz__AskAns--question {
+    font-size: 1.8rem;
+    margin-left: 8%;
+  }
+  .mainInfoObjQuiz__AskAns--answers {
+    margin: 3% 0 0 24%;
+  }
+  .mainInfoObjQuiz__AskAns--choose {
+    font-size: 1.4rem;
+  }
+  .mainInfoObjQuiz__btnNext {
+    top: 89%;
+    left: 70%;
+    font-size: 1.7rem;
+  }
+  .mainInfoObjQuiz__timer {
+    top: 88%;
+    left: 6%;
+    width: 22%;
+    font-size: 2rem;
+  }
+  .mainInfoObjQuiz__btnFinish {
+    top: 89%;
+    left: 70%;
+    font-size: 1.7rem;
+  }
 }

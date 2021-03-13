@@ -3,6 +3,7 @@
      margin: 1.5% 0 0 7%;
     }
 
+    //1100px
     @media only screen and (max-width: 1100px) {
         .btnHome {
             width: 25%;
@@ -10,15 +11,17 @@
            }
     }
 
+    //800px
     @media only screen and (max-width: 800px) {
         .btnHome {
             width: 30%;
            }
     }
 
+    //450px
     @media only screen and (max-width: 450px) {
         .btnHome {
-            width: 40%;
-            margin: 3% 0 0 29%;
+            width: 45%;
+            margin: 3% 0 0 27%;
            }
     }
