@@ -194,6 +194,47 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .mainInfoObjQuiz__AskAns {
+    top: 22%;
+  }
+  .mainInfoObjQuiz__AskAns--wrong {
+    top: 72%;
+    left: 6%;
+    font-size: 1.1rem;
+  }
+  .mainInfoObjQuiz__AskAns--correct {
+    top: 72%;
+    left: 83%;
+    font-size: 1.1rem;
+  }
+  .mainInfoObjQuiz__AskAns--question {
+    font-size: 1.8rem;
+    margin-left: 8%;
+  }
+  .mainInfoObjQuiz__AskAns--answers {
+    margin: 3% 0 0 24%;
+  }
+  .mainInfoObjQuiz__AskAns--choose {
+    font-size: 1.4rem;
+  }
+  .mainInfoObjQuiz__btnNext {
+    top: 92.5%;
+    left: 75%;
+    font-size: 1.7rem;
+  }
+  .mainInfoObjQuiz__timer {
+    top: 92%;
+    left: 6%;
+    width: 22%;
+    font-size: 2rem;
+  }
+  .mainInfoObjQuiz__btnFinish {
+    top: 92.5%;
+    left: 75%;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 350px) {
   .mainInfoObjQuiz {
     width: 95%;
   }

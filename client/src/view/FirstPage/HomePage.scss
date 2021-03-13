@@ -131,12 +131,9 @@
 //450px
 @media only screen and (max-width: 450px) {
     .mainInfoObjHome {
-        // height: 80vh;
-        // margin: 1.5% 0 5% 2.5%;
-
         &__text {
-            top: 16%;
-            left: 1%;
+            top: 21%;
+            left: 3%;
         }
 
         &__text--h {
@@ -155,6 +152,29 @@
         }
 
         &__img {
+            width: 60%;
+            top: 56%;
+            left: 22%;
+        }
+    }
+
+    .btnStart {
+        font-size: 1.5rem;
+        top: 92%;
+        left: 34%;
+        padding: 2%;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mainInfoObjHome {
+        &__text {
+            top: 16%;
+            left: 1%;
+        }
+
+        &__img {
             width: 70%;
             top: 55%;
             left: 17%;
@@ -162,10 +182,7 @@
     }
 
     .btnStart {
-        font-size: 1.5rem;
         top: 89%;
         left: 29%;
-        padding: 2%;
-        border-radius: 25px;
     }
 }

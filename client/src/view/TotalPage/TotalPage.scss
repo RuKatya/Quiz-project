@@ -102,6 +102,29 @@
     .mainInfoObjTotal {    
         &__AllText{
             top: 30%;
+            left: 18%;
+        }
+    
+        &__header{
+            font-size: 2rem;
+        }
+    
+        &__parag {
+            font-size: 1.8rem;
+        }
+    }
+    
+    .btnAgain {
+        top: 70%;
+        left: 36%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mainInfoObjTotal {    
+        &__AllText{
+            top: 30%;
             left: 10%;
         }
     

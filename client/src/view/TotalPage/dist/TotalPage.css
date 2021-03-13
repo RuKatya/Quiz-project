@@ -87,6 +87,24 @@
 @media only screen and (max-width: 450px) {
   .mainInfoObjTotal__AllText {
     top: 30%;
+    left: 18%;
+  }
+  .mainInfoObjTotal__header {
+    font-size: 2rem;
+  }
+  .mainInfoObjTotal__parag {
+    font-size: 1.8rem;
+  }
+
+  .btnAgain {
+    top: 70%;
+    left: 36%;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .mainInfoObjTotal__AllText {
+    top: 30%;
     left: 10%;
   }
   .mainInfoObjTotal__header {

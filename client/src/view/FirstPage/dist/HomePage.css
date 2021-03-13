@@ -110,8 +110,8 @@
 }
 @media only screen and (max-width: 450px) {
   .mainInfoObjHome__text {
-    top: 16%;
-    left: 1%;
+    top: 21%;
+    left: 3%;
   }
   .mainInfoObjHome__text--h {
     font-size: 2rem;
@@ -126,16 +126,32 @@
     font-size: 2rem;
   }
   .mainInfoObjHome__img {
+    width: 60%;
+    top: 56%;
+    left: 22%;
+  }
+
+  .btnStart {
+    font-size: 1.5rem;
+    top: 92%;
+    left: 34%;
+    padding: 2%;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .mainInfoObjHome__text {
+    top: 16%;
+    left: 1%;
+  }
+  .mainInfoObjHome__img {
     width: 70%;
     top: 55%;
     left: 17%;
   }
 
   .btnStart {
-    font-size: 1.5rem;
     top: 89%;
     left: 29%;
-    padding: 2%;
-    border-radius: 25px;
   }
 }
