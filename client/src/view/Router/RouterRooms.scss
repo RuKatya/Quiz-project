@@ -2,3 +2,23 @@
      width: 10%;
      margin: 1.5% 0 0 7%;
     }
+
+    @media only screen and (max-width: 1100px) {
+        .btnHome {
+            width: 25%;
+            margin: 2% 0 0 10%;
+           }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .btnHome {
+            width: 30%;
+           }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .btnHome {
+            width: 40%;
+            margin: 3% 0 0 29%;
+           }
+    }

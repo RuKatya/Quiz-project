@@ -1,8 +1,4 @@
-body {
-    // background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(44,190,232,1) 100%) no-repeat fixed;
-}
-
-.mainInfoObj {
+.mainInfoObjHome {
     width: 90%;
     height: 70vh;
     margin: 1.5% 0 0 5%;
@@ -34,7 +30,6 @@ body {
 }
 
 .btnStart {
-    position: relative;
     font-size: 2rem;
     position: absolute;
     top: 72%;
@@ -48,3 +43,150 @@ body {
         background-color: rgba(0, 248, 0, 0.767);
     }
 }
+
+// 1100px
+@media only screen and (max-width: 1100px) {
+    .mainInfoObjHome {
+        height: 85vh;
+        // margin: 1.5% 0 0 5%;
+        // background-color: rgba(255, 255, 255, 0.800);
+        border-radius: 40px;
+        // box-shadow: 0px 0px 15px rgb(165, 164, 164);
+        &__text{
+            // position: absolute;
+            top: 20%;
+            left: 9%;
+            // text-align: center;
+        }
+        &__text--h{
+            font-size: 5rem;
+        }
+        &__text--p{
+            font-size: 3rem;
+        }
+        &__text--pTriviaKing{
+            // font-weight: bold;
+            font-size: 4rem;
+        }
+        &__img{
+            width: 40%;
+            // position: absolute;
+            top: 60%;
+            left: 32%;
+        }
+    }
+    
+    .btnStart {
+        font-size: 3rem;
+        // position: absolute;
+        top: 90%;
+        left: 37%;
+        // background-color: rgba(46, 243, 46, 0.582);
+        // color: black;
+        padding: 1%;
+        border-radius: 25px;
+        // text-decoration: none;
+        // &:hover {
+        //     background-color: rgba(0, 248, 0, 0.767);
+        // }
+    }
+    }
+
+//800px
+    @media only screen and (max-width: 800px) {
+        .mainInfoObjHome {
+            width: 95%;
+            height: 85vh;
+            margin: 1.5% 0 5% 2.5%;
+            // background-color: rgba(255, 255, 255, 0.800);
+            // border-radius: 40px;
+            // box-shadow: 0px 0px 15px rgb(165, 164, 164);
+            &__text{
+                // position: absolute;
+                top: 18%;
+                left: 4%;
+                // text-align: center;
+            }
+            &__text--h{
+                font-size: 4.5rem;
+            }
+            &__text--p{
+                font-size: 2.5rem;
+            }
+            &__text--pTriviaKing{
+                // font-weight: bold;
+                font-size: 3.5rem;
+            }
+            &__img{
+                // width: 40%;
+                // position: absolute;
+                top: 65%;
+                left: 32%;
+            }
+        }
+        
+        .btnStart {
+            font-size: 2.5rem;
+            // position: absolute;
+            top: 92%;
+            left: 36%;
+            // background-color: rgba(46, 243, 46, 0.582);
+            // color: black;
+            padding: 1%;
+            border-radius: 25px;
+            // text-decoration: none;
+            // &:hover {
+            //     background-color: rgba(0, 248, 0, 0.767);
+            // }
+        }
+        }
+
+        //450px
+        @media only screen and (max-width: 450px) {
+            .mainInfoObjHome {
+                width: 95%;
+                height: 140vh;
+                margin: 1.5% 0 5% 2.5%;
+                // background-color: rgba(255, 255, 255, 0.800);
+                // border-radius: 40px;
+                // box-shadow: 0px 0px 15px rgb(165, 164, 164);
+                &__text{
+                    // position: absolute;
+                    top: 18%;
+                    left: 4%;
+                    // text-align: center;
+                }
+                &__text--h{
+                    font-size: 3rem;
+                }
+                &__text--p{
+                    font-size: 2rem;
+                }
+                &__text--pTriviaKing{
+                    // font-weight: bold;
+                    font-size: 2.5rem;
+                }
+                &__img{
+                    width: 80%;
+                    // position: absolute;
+                    top: 98%;
+                    left: 12%;
+                }
+            }
+            
+            .btnStart {
+                font-size: 2.5rem;
+                // position: absolute;
+                top: 140%;
+                left: 22%;
+                // background-color: rgba(46, 243, 46, 0.582);
+                // color: black;
+                padding: 1%;
+                border-radius: 25px;
+                // text-decoration: none;
+                // &:hover {
+                //     background-color: rgba(0, 248, 0, 0.767);
+                // }
+            }
+            }
+

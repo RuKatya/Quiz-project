@@ -1,4 +1,4 @@
-.mainInfoObj {
+.mainInfoObjQuiz {
   width: 90%;
   height: 70vh;
   margin: 1.5% 0 0 5%;
@@ -6,13 +6,13 @@
   border-radius: 30px;
   box-shadow: 0px 0px 15px #a5a4a4;
 }
-.mainInfoObj__AskAns {
+.mainInfoObjQuiz__AskAns {
   position: absolute;
   width: 90%;
   top: 25%;
   text-align: center;
 }
-.mainInfoObj__AskAns--wrong {
+.mainInfoObjQuiz__AskAns--wrong {
   position: absolute;
   top: 58%;
   left: 31%;
@@ -20,18 +20,18 @@
   color: red;
   font-weight: bold;
 }
-.mainInfoObj__AskAns--question {
+.mainInfoObjQuiz__AskAns--question {
   font-size: 3rem;
   width: 90%;
   margin-left: 5%;
 }
-.mainInfoObj__AskAns--answers {
+.mainInfoObjQuiz__AskAns--answers {
   display: flex;
   flex-direction: column;
   width: 20%;
   margin: 5% 0 0 40%;
 }
-.mainInfoObj__AskAns--correct {
+.mainInfoObjQuiz__AskAns--correct {
   position: absolute;
   top: 58%;
   left: 62%;
@@ -39,22 +39,22 @@
   color: green;
   font-weight: bold;
 }
-.mainInfoObj__AskAns--choose {
+.mainInfoObjQuiz__AskAns--choose {
   font-family: "Architects Daughter", cursive;
   font-weight: bold;
   border: none;
   background: #8bec9b;
   border-radius: 30px;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin: 2.5%;
   padding: 2%;
   outline: none;
 }
-.mainInfoObj__AskAns--choose:hover {
+.mainInfoObjQuiz__AskAns--choose:hover {
   background: #dae674;
   transition: 0.2s;
 }
-.mainInfoObj__btnNext {
+.mainInfoObjQuiz__btnNext {
   font-family: "Architects Daughter", cursive;
   position: absolute;
   padding: 0.5% 2.5%;
@@ -68,11 +68,11 @@
   color: black;
   outline: none;
 }
-.mainInfoObj__btnNext:hover {
+.mainInfoObjQuiz__btnNext:hover {
   background-color: #1df086;
   transition: 0.2s;
 }
-.mainInfoObj__timer {
+.mainInfoObjQuiz__timer {
   position: absolute;
   top: 72%;
   left: 9%;
@@ -83,7 +83,7 @@
   border-radius: 100px;
   text-align: center;
 }
-.mainInfoObj__btnFinish {
+.mainInfoObjQuiz__btnFinish {
   position: absolute;
   top: 78%;
   left: 84%;

@@ -12,11 +12,9 @@ function QuizPage(props) {
     const [displayFinish, setDisplayFinish] = useState('none') //display of finish button
     const [showWrong, setShowWrong] = useState('none'); //show wrong 
     const [showCorrect, setShowCorrect] = useState('none'); //show correct
-    const [seconds, setSeconds] = useState(60); //timer
+    const [seconds, setSeconds] = useState(600); //timer
 
     const { score, setScore } = props;
-
-    console.log(score);
 
     //BODY STYLE
     useEffect(() => {
@@ -80,7 +78,7 @@ function QuizPage(props) {
         }
 
         return (
-            <div className="mainInfoObj__timer">
+            <div className="mainInfoObjQuiz__timer">
                 {Math.floor(seconds / 60)}:{sec}
             </div>
         );
@@ -106,48 +104,48 @@ function QuizPage(props) {
 
         return (
             <div>
-                <div className='mainInfoObj'>
-                    <div className='mainInfoObj__AskAns'>
+                <div className='mainInfoObjQuiz'>
+                    <div className='mainInfoObjQuiz__AskAns'>
                         <h1
-                            className='mainInfoObj__AskAns--question'
+                            className='mainInfoObjQuiz__AskAns--question'
                         >
                             {questions[arrayNum].numAsk}. {questions[arrayNum].ask}
                         </h1>
                         <p
-                            className="mainInfoObj__AskAns--wrong"
+                            className="mainInfoObjQuiz__AskAns--wrong"
                             style={{ display: showWrong }}
                         >
                             Wrong!
                              </p>
-                        <div className='mainInfoObj__AskAns--answers'>
+                        <div className='mainInfoObjQuiz__AskAns--answers'>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans1)}
-                                className='mainInfoObj__AskAns--choose'
+                                className='mainInfoObjQuiz__AskAns--choose'
                             >
                                 {questions[arrayNum].ans1}
                             </button>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans2)}
-                                className='mainInfoObj__AskAns--choose'
+                                className='mainInfoObjQuiz__AskAns--choose'
                             >
                                 {questions[arrayNum].ans2}
                             </button>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans3)}
-                                className='mainInfoObj__AskAns--choose'
+                                className='mainInfoObjQuiz__AskAns--choose'
                             >
                                 {questions[arrayNum].ans3}
                             </button>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans4)}
-                                className='mainInfoObj__AskAns--choose'
+                                className='mainInfoObjQuiz__AskAns--choose'
 
                             >
                                 {questions[arrayNum].ans4}
                             </button>
                         </div>
                         <p
-                            className="mainInfoObj__AskAns--correct"
+                            className="mainInfoObjQuiz__AskAns--correct"
                             style={{ display: showCorrect }}
                         >
                             Correct!
@@ -157,7 +155,7 @@ function QuizPage(props) {
                         type="button"
                         value="Next"
                         onClick={counterPlus}
-                        className="mainInfoObj__btnNext"
+                        className="mainInfoObjQuiz__btnNext"
                         style={{ display: displayNext }}
                     />
                 </div>
@@ -167,7 +165,7 @@ function QuizPage(props) {
                 <Link
                     to='/total'
                     style={{ display: displayFinish }}
-                    className="mainInfoObj__btnFinish" >
+                    className="mainInfoObjQuiz__btnFinish" >
                     Done!
                 </Link>
 

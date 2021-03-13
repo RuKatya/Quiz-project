@@ -1,4 +1,4 @@
-.mainInfoObj {
+.mainInfoObjHome {
   width: 90%;
   height: 70vh;
   margin: 1.5% 0 0 5%;
@@ -6,23 +6,23 @@
   border-radius: 30px;
   box-shadow: 0px 0px 15px #a5a4a4;
 }
-.mainInfoObj__text {
+.mainInfoObjHome__text {
   position: absolute;
   top: 22%;
   left: 10%;
   text-align: center;
 }
-.mainInfoObj__text--h {
+.mainInfoObjHome__text--h {
   font-size: 4rem;
 }
-.mainInfoObj__text--p {
+.mainInfoObjHome__text--p {
   font-size: 2.5rem;
 }
-.mainInfoObj__text--pTriviaKing {
+.mainInfoObjHome__text--pTriviaKing {
   font-weight: bold;
   font-size: 3rem;
 }
-.mainInfoObj__img {
+.mainInfoObjHome__img {
   width: 40%;
   position: absolute;
   top: 17%;
@@ -30,7 +30,6 @@
 }
 
 .btnStart {
-  position: relative;
   font-size: 2rem;
   position: absolute;
   top: 72%;
@@ -43,4 +42,102 @@
 }
 .btnStart:hover {
   background-color: rgba(0, 248, 0, 0.767);
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainInfoObjHome {
+    height: 85vh;
+    border-radius: 40px;
+  }
+  .mainInfoObjHome__text {
+    top: 20%;
+    left: 9%;
+  }
+  .mainInfoObjHome__text--h {
+    font-size: 5rem;
+  }
+  .mainInfoObjHome__text--p {
+    font-size: 3rem;
+  }
+  .mainInfoObjHome__text--pTriviaKing {
+    font-size: 4rem;
+  }
+  .mainInfoObjHome__img {
+    width: 40%;
+    top: 60%;
+    left: 32%;
+  }
+
+  .btnStart {
+    font-size: 3rem;
+    top: 90%;
+    left: 37%;
+    padding: 1%;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mainInfoObjHome {
+    width: 95%;
+    height: 85vh;
+    margin: 1.5% 0 5% 2.5%;
+  }
+  .mainInfoObjHome__text {
+    top: 18%;
+    left: 4%;
+  }
+  .mainInfoObjHome__text--h {
+    font-size: 4.5rem;
+  }
+  .mainInfoObjHome__text--p {
+    font-size: 2.5rem;
+  }
+  .mainInfoObjHome__text--pTriviaKing {
+    font-size: 3.5rem;
+  }
+  .mainInfoObjHome__img {
+    top: 65%;
+    left: 32%;
+  }
+
+  .btnStart {
+    font-size: 2.5rem;
+    top: 92%;
+    left: 36%;
+    padding: 1%;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mainInfoObjHome {
+    width: 95%;
+    height: 140vh;
+    margin: 1.5% 0 5% 2.5%;
+  }
+  .mainInfoObjHome__text {
+    top: 18%;
+    left: 4%;
+  }
+  .mainInfoObjHome__text--h {
+    font-size: 3rem;
+  }
+  .mainInfoObjHome__text--p {
+    font-size: 2rem;
+  }
+  .mainInfoObjHome__text--pTriviaKing {
+    font-size: 2.5rem;
+  }
+  .mainInfoObjHome__img {
+    width: 80%;
+    top: 98%;
+    left: 12%;
+  }
+
+  .btnStart {
+    font-size: 2.5rem;
+    top: 140%;
+    left: 22%;
+    padding: 1%;
+    border-radius: 25px;
+  }
 }
