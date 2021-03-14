@@ -20,7 +20,7 @@ function HomePage() {
             <div className='mainInfoObjHome'>
                 <div className='mainInfoObjHome__text'>
                     <h1 className='mainInfoObjHome__text--h'>Welcome to quiz</h1>
-                    <p className='mainInfoObjHome__text--p'>Think you know everythins? <p />
+                    <p className='mainInfoObjHome__text--p'>Think you know everything? <p />
                         <p>Let's see if you can become the next</p>
                         <p className='mainInfoObjHome__text--pTriviaKing'>Trivia King!</p>
                     </p>
