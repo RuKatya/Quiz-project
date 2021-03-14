@@ -3,6 +3,9 @@ body {
   font-family: 'Architects Daughter', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
 code {
