@@ -8,7 +8,9 @@ app.use(cors())
 
 //mongoose
 const mongoose = require('mongoose'); //npm i mongoose
-const url = 'mongodb+srv://KatyaRu:ZX2hNfwMksy10h4u@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+
+
+const url = 'mongodb+srv://KatyaRu:whatwhatwhat@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
     useNewUrlParser: true,
