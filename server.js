@@ -10,7 +10,7 @@ app.use(cors())
 const mongoose = require('mongoose'); //npm i mongoose
 
 
-const url = 'mongodb+srv://KatyaRu:whatwhatwhat@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+const url = 'mongodb+srv://KaKa:cQQMnA0Wdt8XBUub@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
     useNewUrlParser: true,
@@ -30,12 +30,12 @@ const Question = mongoose.model('Question', { //collection
 });
 
 //Get data from DB
-app.get('/api', async (req, res) => {
+app.get('/data', async (req, res) => {
     try {
         const questions = await Question.find({});
         res.status(200).send({ questions })
     } catch (error) {
-        res.status(400).send({ error })
+        res.status(400).send({  error })
     }
 })
 
