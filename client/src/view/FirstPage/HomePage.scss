@@ -364,11 +364,15 @@
         &__text {
             top: 14%;
             left: 1%;
+
+            &--pTriviaKing {
+                top: 80%;
+                left: 23%;
+            }
         }
 
         &__img {
-            // width: 70%;
-            top: 57%;
+            top: 59%;
             left: 17%;
         }
     }
