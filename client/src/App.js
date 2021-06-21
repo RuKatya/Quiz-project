@@ -1,9 +1,7 @@
+//React
 import React from 'react'
 
-//CSS
-import './App.css';
-
-//Rooms
+//Router
 import RouterRooms from './view/Router/RouterRooms'
 
 function App() {

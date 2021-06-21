@@ -50,6 +50,122 @@
     }
 }
 
+//1870px 
+@media only screen and (max-width: 1870px) {
+    .btnStart {
+        top: 75%;
+        left: 24%;
+    }
+}
+
+//1710px 
+@media only screen and (max-width: 1710px) {
+    .btnStart {
+        top: 75%;
+        left: 25.2%;
+    }
+}
+
+//1680px 
+@media only screen and (max-width: 1680px) {
+    .mainInfoObjHome {
+        &__img {
+            width: 40%;
+            position: absolute;
+            top: 17%;
+            left: 55%;
+        }
+    }
+
+    .btnStart {
+        top: 75%;
+        left: 25.2%;
+    }
+}
+
+//1560px 
+@media only screen and (max-width: 1560px) {
+    .mainInfoObjHome {
+        &__img {
+            width: 38%;
+            position: absolute;
+            top: 20%;
+            left: 57%;
+        }
+    }
+
+    .btnStart {
+        top: 75%;
+        left: 26.7%;
+    }
+}
+
+//1480px 
+@media only screen and (max-width: 1480px) {
+    .mainInfoObjHome {
+        &__img {
+            width: 34%;
+            position: absolute;
+            top: 25%;
+            left: 61%;
+        }
+    }
+
+    .btnStart {
+        top: 75%;
+        left: 28%;
+    }
+}
+
+//1360px 
+@media only screen and (max-width: 1360px) {
+    .mainInfoObjHome {
+        &__img {
+            width: 31%;
+            position: absolute;
+            top: 28%;
+            left: 64.5%;
+        }
+    }
+
+    .btnStart {
+        top: 74%;
+        left: 29%;
+    }
+}
+
+//1270px 
+@media only screen and (max-width: 1270px) {
+    .mainInfoObjHome {
+        &__text {
+            position: absolute;
+            top: 24%;
+            left: 12%;
+            text-align: center;
+        }
+
+        &__text--h {
+            font-size: 3rem;
+        }
+
+        &__text--p {
+            font-size: 2rem;
+        }
+
+        &__img {
+            width: 29%;
+            position: absolute;
+            top: 28%;
+            left: 64.5%;
+        }
+    }
+
+    .btnStart {
+        top: 70%;
+        left: 27.3%;
+    }
+}
+
 // 1100px
 @media only screen and (max-width: 1100px) {
     .mainInfoObjHome {
@@ -160,13 +276,68 @@
 
     .btnStart {
         font-size: 1.5rem;
-        top: 92%;
+        top: 88%;
         left: 34%;
         padding: 2%;
         border-radius: 25px;
     }
 }
 
+//411px
+@media only screen and (max-width: 411px) {
+    .mainInfoObjHome {
+        &__text {
+            top: 21%;
+            left: 3%;
+        }
+
+        &__text--h {
+            font-size: 2rem;
+        }
+
+        &__text--p {
+            font-size: 1.5rem;
+        }
+
+        &__text--pTriviaKing {
+            position: absolute;
+            top: 77%;
+            left: 29%;
+            font-size: 2rem;
+        }
+
+        &__img {
+            width: 60%;
+            top: 56%;
+            left: 22%;
+        }
+    }
+
+    .btnStart {
+        font-size: 1.5rem;
+        top: 86%;
+        left: 34%;
+        padding: 2%;
+        border-radius: 25px;
+    }
+}
+
+//375px
+@media only screen and (max-width: 375px) {
+    .mainInfoObjHome {
+        &__img {
+            top: 59%;
+            left: 23%;
+        }
+    }
+
+    .btnStart {
+        top: 87.5%;
+        left: 32%;
+    }
+}
+
+//350px
 @media only screen and (max-width: 350px) {
     .mainInfoObjHome {
         &__text {
@@ -184,5 +355,28 @@
     .btnStart {
         top: 89%;
         left: 29%;
+    }
+}
+
+//280px
+@media only screen and (max-width: 280px) {
+    .mainInfoObjHome {
+        &__text {
+            top: 14%;
+            left: 1%;
+        }
+
+        &__img {
+            // width: 70%;
+            top: 57%;
+            left: 17%;
+        }
+    }
+
+    .btnStart {
+        font-size: 1.4rem;
+        padding: 3%;
+        top: 85%;
+        left: 27%;
     }
 }
