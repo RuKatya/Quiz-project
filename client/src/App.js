@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <RouterRooms />
-      </div>
+    </div>
   )
 }
 

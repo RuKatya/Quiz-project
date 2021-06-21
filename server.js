@@ -9,7 +9,6 @@ app.use(cors())
 //mongoose
 const mongoose = require('mongoose'); //npm i mongoose
 
-
 const url = 'mongodb+srv://KaKa:cQQMnA0Wdt8XBUub@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
@@ -35,7 +34,7 @@ app.get('/data', async (req, res) => {
         const questions = await Question.find({});
         res.status(200).send({ questions })
     } catch (error) {
-        res.status(400).send({  error })
+        res.status(400).send({ error })
     }
 })
 

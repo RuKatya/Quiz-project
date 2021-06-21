@@ -14,7 +14,7 @@ app.use(cors()); //mongoose
 var mongoose = require('mongoose'); //npm i mongoose
 
 
-var url = 'mongodb+srv://KatyaRu:ZX2hNfwMksy10h4u@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+var url = 'mongodb+srv://KaKa:cQQMnA0Wdt8XBUub@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
   useNewUrlParser: true,
@@ -35,7 +35,7 @@ var Question = mongoose.model('Question', {
   correctAnswer: String
 }); //Get data from DB
 
-app.get('/api', function _callee(req, res) {
+app.get('/data', function _callee(req, res) {
   var questions;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {

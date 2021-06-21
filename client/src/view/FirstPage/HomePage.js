@@ -11,7 +11,7 @@ function HomePage() {
         function change() {
             document.body.style = 'background: linear-gradient(0deg, rgba(159,40,227,1) 0%, rgba(44,190,232,1) 100%) no-repeat fixed;'
         }
-
+        
         change();
     }, [])
 

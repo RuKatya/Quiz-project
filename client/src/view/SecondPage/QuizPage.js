@@ -21,6 +21,7 @@ function QuizPage(props) {
         function change() {
             document.body.style = 'background:linear-gradient(0deg, rgb(233, 253, 47)  0%, rgb(47, 243, 80) 100%) no-repeat fixed;'
         }
+        
         change();
     }, [])
 
