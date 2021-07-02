@@ -14,7 +14,7 @@ app.use(cors()); //mongoose
 var mongoose = require('mongoose'); //npm i mongoose
 
 
-var url = 'mongodb+srv://KaKa:cQQMnA0Wdt8XBUub@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+var url = 'mongodb+srv://KaKa:WO3sm2Hl7eXTMN0Y@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
   useNewUrlParser: true,
@@ -69,5 +69,5 @@ app.get('/data', function _callee(req, res) {
 });
 var port = process.env.PORT || 4000;
 app.listen(port, function () {
-  console.log("Listening on port ".concat(port));
+  console.log("Listening on port http://localhost:".concat(port));
 });

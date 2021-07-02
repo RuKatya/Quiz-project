@@ -9,7 +9,7 @@ app.use(cors())
 //mongoose
 const mongoose = require('mongoose'); //npm i mongoose
 
-const url = 'mongodb+srv://KaKa:cQQMnA0Wdt8XBUub@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+const url = 'mongodb+srv://KaKa:WO3sm2Hl7eXTMN0Y@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
     useNewUrlParser: true,
@@ -40,5 +40,5 @@ app.get('/data', async (req, res) => {
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+    console.log(`Listening on port http://localhost:${port}`);
 })
