@@ -270,6 +270,17 @@
     left: 32%;
   }
 }
+@media only screen and (max-width: 360px) {
+  .mainInfoObjHome__img {
+    top: 56%;
+    left: 23%;
+  }
+
+  .btnStart {
+    top: 85%;
+    left: 32%;
+  }
+}
 @media only screen and (max-width: 350px) {
   .mainInfoObjHome__text {
     top: 16%;
