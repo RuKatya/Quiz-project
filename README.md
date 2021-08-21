@@ -52,6 +52,7 @@ Then I built the client side in which I wrote it in React. While writing the cod
 - props
 - React-router-dom and else.
 
+<hr/>
 
 <div style="text-align: center;color:yellow;">
 The trivia will consist of 23 questions and you will be given 10 minutes to solve them all.
