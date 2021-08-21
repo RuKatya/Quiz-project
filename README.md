@@ -36,8 +36,8 @@ The project was built as a part of the study. During the project we had the free
 
 <h2 style="color: rgb(76, 76, 155);">Project creation process</h2>
 
-The first thing I did, was to build a sketch of the way the site will look like by using [Diagrams](https://drive.google.com/file/d/1-MvioFju07lw9E-jOv1eVpBxJKna6fTu/view?usp=sharing).
-Then I started building the web site, first the server. 
+In the beginning I was building a sketch of the way the site will look like by using [Diagrams](https://drive.google.com/file/d/1-MvioFju07lw9E-jOv1eVpBxJKna6fTu/view?usp=sharing).
+Then, I started building the web site, first the server. 
 In the server I used:
 
 - Express
