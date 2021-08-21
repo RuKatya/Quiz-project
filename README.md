@@ -55,7 +55,7 @@ Then I built the client side in which I wrote it in React. While writing the cod
 <hr/>
 
 <div style="text-align: center;color:yellow;">
-The trivia will consist of 23 questions and you will be given 10 minutes to solve them all.
+The trivia contains 23 questions in which the user has 10 minutes to solve them all.
 <h2 style="color: white">
     So, are you the next <span style="color: red;">Trivia King</span>?
     </h2>
