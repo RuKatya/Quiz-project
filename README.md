@@ -2,7 +2,7 @@
 
 <h2 style="color: rgb(76, 76, 155);">Running</h2>
 
-<b>Running the server</b>
+<b>Project setup</b>
 
 > Install the dependencies
 ```
