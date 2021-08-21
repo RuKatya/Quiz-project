@@ -45,7 +45,8 @@ In the server I used:
 - Cors
 - Fetch
   
-Then I built the client side in which I wrote it in React. While writing the code I used: 
+During building the server I was also building the client side in which I wrote it in React. 
+While writing the code I used: 
 
 - useEffect
 - useState
