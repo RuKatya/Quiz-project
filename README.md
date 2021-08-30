@@ -30,7 +30,7 @@ npm start
 <hr/>
 
 <h2 style="color: rgb(76, 76, 155);">About the project</h2>
-The project was built as a part of the a study. During the project we had the freedom to choose which type of site and the topic of the project, but it was important that the project be registered in React. Basides that I used MongoDB and NodeJS.
+The project was built as a part of the a study. During the project we had the freedom to choose type of site and the topic of the project. It was important that the project be written in React. Basides that I used MongoDB and NodeJS.
 
 <hr/>
 
