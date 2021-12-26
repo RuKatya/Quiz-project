@@ -21,7 +21,7 @@ function QuizPage(props) {
         function change() {
             document.body.style = 'background:linear-gradient(0deg, rgb(233, 253, 47)  0%, rgb(47, 243, 80) 100%) no-repeat fixed;'
         }
-        
+
         change();
     }, [])
 
@@ -110,14 +110,14 @@ function QuizPage(props) {
                         <h1
                             className='mainInfoObjQuiz__AskAns--question'
                         >
-                            {questions[arrayNum].numAsk}. {questions[arrayNum].ask}
+                            {questions[arrayNum].ask}
                         </h1>
                         <p
                             className="mainInfoObjQuiz__AskAns--wrong"
                             style={{ display: showWrong }}
                         >
                             Wrong!
-                             </p>
+                        </p>
                         <div className='mainInfoObjQuiz__AskAns--answers'>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans1)}
@@ -150,7 +150,7 @@ function QuizPage(props) {
                             style={{ display: showCorrect }}
                         >
                             Correct!
-                            </p>
+                        </p>
                     </div>
                     <input
                         type="button"
