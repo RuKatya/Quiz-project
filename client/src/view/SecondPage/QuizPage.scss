@@ -108,6 +108,8 @@
         color: black;
         outline: none;
     }
+
+
 }
 
 //1100px
@@ -231,6 +233,7 @@
 //450px
 @media only screen and (max-width: 450px) {
     .mainInfoObjQuiz {
+
         // width: 95%;
         &__AskAns {
             top: 22%;
@@ -285,6 +288,7 @@
 @media only screen and (max-width: 350px) {
     .mainInfoObjQuiz {
         width: 95%;
+
         &__AskAns {
             top: 18%;
         }
@@ -334,4 +338,3 @@
         }
     }
 }
-

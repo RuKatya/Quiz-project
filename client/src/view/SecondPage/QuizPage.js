@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 
 //CSS
-import './dist/QuizPage.css'
+import './QuizPage.scss'
 
 function QuizPage(props) {
     const [getQuestions, setQuestions] = useState(null); //get DB
@@ -112,12 +112,7 @@ function QuizPage(props) {
                         >
                             {questions[arrayNum].ask}
                         </h1>
-                        <p
-                            className="mainInfoObjQuiz__AskAns--wrong"
-                            style={{ display: showWrong }}
-                        >
-                            Wrong!
-                        </p>
+
                         <div className='mainInfoObjQuiz__AskAns--answers'>
                             <button
                                 onClick={() => hendleAnswer(questions[arrayNum].ans1)}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import './dist/RulesPage.css'
+import './RulesPage.scss'
 
 function RulesPage() {
 
