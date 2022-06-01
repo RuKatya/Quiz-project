@@ -9,7 +9,7 @@ app.use(cors())
 //mongoose
 const mongoose = require('mongoose'); //npm i mongoose
 
-const url = 'mongodb+srv://KaKa:WO3sm2Hl7eXTMN0Y@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+const url = 'mongodb+srv://KaKa:7pl0qohPTblWZF0T@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
     useNewUrlParser: true,

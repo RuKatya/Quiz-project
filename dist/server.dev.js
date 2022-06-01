@@ -14,7 +14,7 @@ app.use(cors()); //mongoose
 var mongoose = require('mongoose'); //npm i mongoose
 
 
-var url = 'mongodb+srv://KaKa:WO3sm2Hl7eXTMN0Y@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
+var url = 'mongodb+srv://KaKa:7pl0qohPTblWZF0T@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
   useNewUrlParser: true,
