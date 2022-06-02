@@ -1,0 +1,112 @@
+.quizPage {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 50vh;
+
+    @media only screen and (max-width:750px) {
+        margin: 0% 0%;
+        padding: 0% 0%;
+        height: 83vh;
+    }
+
+    h2 {
+        font-size: clamp(20px, 1.6rem, 40px);
+        width: 80%;
+        grid-column: 1/3;
+    }
+
+    &__answers {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+
+        &--choose {
+            font-family: 'Architects Daughter', cursive;
+            font-weight: bold;
+            border: none;
+            width: 14vw;
+            background: rgb(139, 236, 155);
+            border-radius: 30px;
+            font-size: 1.4rem;
+            margin: 2.5%;
+            padding: 2.5% 2%;
+            outline: none;
+
+            @media only screen and (max-width:750px) {
+                width: 65vw;
+                padding: 1% 2%;
+            }
+
+            &:hover {
+                background: rgb(218, 230, 116);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &__checkAns {
+        position: absolute;
+        top: 37%;
+
+        @media only screen and (max-width:750px) {
+            top: -3%;
+            font-size: 0.5rem;
+        }
+    }
+
+    &__wrongAns {
+        left: 25%;
+        color: red;
+
+        @media only screen and (max-width:750px) {
+            left: 35%;
+            font-size: 0.5rem;
+        }
+    }
+
+    &__correctAns {
+        color: green;
+        right: 25%;
+
+        @media only screen and (max-width:750px) {
+            right: 30%;
+            font-size: 0.5rem;
+        }
+    }
+
+    &__nexthBtn {
+        font-size: 1.4rem;
+        border: none;
+        padding: 1% 2%;
+
+        @media only screen and (max-width:750px) {
+            font-size: 1.5rem;
+            padding: 2% 5%;
+        }
+    }
+
+    &__finnishBtn {
+        font-size: 1.5rem;
+        border: none;
+        padding: 1% 2%;
+
+        @media only screen and (max-width:750px) {
+            font-size: 1.6rem;
+            padding: 2% 5%;
+        }
+    }
+}
+
+.timer {
+    font-size: 2rem;
+    width: 12%;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 0.5% 3%;
+
+    @media only screen and (max-width:750px) {
+        width: 50%;
+    }
+}

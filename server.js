@@ -1,22 +1,19 @@
 const express = require('express');
 const app = express();
-const path = require('path');
-const cors = require('cors');
-
-app.use(express.static(path.join(__dirname, 'client', 'build')));
-app.use(cors())
-
-//mongoose
 const mongoose = require('mongoose'); //npm i mongoose
+const cors = require('cors');
+const port = process.env.PORT || 7894;
+app.use(express.static('client/build'));
+app.use(cors());
 
 const url = 'mongodb+srv://KaKa:7pl0qohPTblWZF0T@cluster0.mfqlq.mongodb.net/test'; //mpngoDB url
 
 mongoose.connect(url, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
+    useUnifiedTopology: true
+}, () => {
+    console.log("DB CONNECT")
 })
-    .then(() => console.log("DB CONNECT")); //connectin to the db
 
 const Question = mongoose.model('Question', { //collection
     numAsk: Number,
@@ -38,7 +35,7 @@ app.get('/data', async (req, res) => {
     }
 })
 
-const port = process.env.PORT || 4000;
+
 app.listen(port, () => {
     console.log(`Listening on port http://localhost:${port}`);
 })

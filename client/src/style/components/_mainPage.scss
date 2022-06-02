@@ -1,0 +1,64 @@
+.mainPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__infoWindow {
+        margin-top: 3%;
+        width: clamp(250px, 70%, 1500px);
+        background-color: white;
+        padding: 2%;
+        border-radius: $borderRadius;
+        display: grid;
+        text-align: center;
+
+        &--firstPage {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--rulesPage,
+        &--totalPage {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &--firstPage,
+        &--rulesPage,
+        &--quizPage {
+            justify-items: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width:750px) {
+            grid-template-columns: repeat(1, 1fr);
+            width: clamp(250px, 90%, 1500px);
+            margin-top: 0%;
+            padding: 0%;
+        }
+
+        h1 {
+            grid-column: 1/2;
+            font-size: clamp(50px, 4rem, 70px);
+
+            @media only screen and (max-width:750px) {
+                font-size: clamp(30px, 2.2rem, 70px);
+                margin: 2% 0%;
+            }
+        }
+
+        p {
+            font-size: clamp(20px, 2.5em, 40px);
+
+            @media only screen and (max-width:750px) {
+                font-size: clamp(20px, 1.8rem, 40px);
+            }
+        }
+
+        &--triviaKing {
+            font-weight: bold;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+}

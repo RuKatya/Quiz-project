@@ -1,0 +1,17 @@
+.totalPage {
+    margin: 5% 0%;
+    justify-items: center;
+
+    @media only screen and (max-width:750px) {
+        margin: 0% 0%;
+        padding: 20% 0%;
+    }
+
+    &__tryAgain {
+        width: 10%;
+
+        @media only screen and (max-width:750px) {
+            width: 50%;
+        }
+    }
+}

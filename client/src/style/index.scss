@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import './vars/index';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width:750px) {
+        justify-content: center;
+    }
+
+    div {
+        width: clamp(150px, 12%, 400px);
+        margin: 1% 0% 0% 15%;
+
+        @media only screen and (max-width:750px) {
+            margin-left: 0%;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.nextBtn {
+    background-color: rgba(46, 243, 46, 0.582);
+    font-size: clamp(20px, 1.5rem, 40px);
+    color: black;
+    padding: 1.5%;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    transition: all 0.5s;
+
+    @media only screen and (max-width:750px) {
+        padding: 2% 5%;
+    }
+
+    &:hover {
+        background-color: rgba(0, 248, 0, 0.767);
+    }
+}
+
+@import './components/mainPage';
+@import './components/rulesPage';
+@import './components/quizPage';
+@import './components/totalPage';
