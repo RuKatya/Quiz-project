@@ -30,7 +30,7 @@ const Total = ({ score, setScore }: Props) => {
       setText("Congratulations! You are the trivia king");
     }
 
-    console.log(score); //for check
+    // console.log(score); //for check
 
     return <p>{text}</p>;
   }

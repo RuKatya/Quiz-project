@@ -42,7 +42,7 @@ const Quiz = ({ score, setScore }: Props) => {
     async function fetchData() {
       const { data } = await axios.get(`/data`);
 
-      console.log(data.questions);
+      // console.log(data.questions);
       setQuestions(data.questions);
     }
     fetchData();
@@ -61,9 +61,9 @@ const Quiz = ({ score, setScore }: Props) => {
       setDisplayFinish("block");
     }
 
-    console.log(displayNext, arrayNum);
+    // console.log(displayNext, arrayNum);
 
-    console.log("flag", checkFlag);
+    // console.log("flag", checkFlag);
   }
 
   //TIMER
